@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesB.css">
+    
+    <title>Feedback Form</title>
+</head>
+<body>
+    <header>
+        <h1>Customer Survey Form</h1>
+    </header>
+   
+    <form id="form">
+        <div class="form-group c1 required" data-cid="c1">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+
+        <div class="form-group c2 required" data-cid="c2">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+            <label>Is this your first time using our products & service?</label>
+            <input type="radio" id="firstTimeYes" name="firstTime" value="yes">Yes
+            <input type="radio" id="firstTimeNo" name="firstTime" value="no">No
+        </div>
+
+        <div class="form-group">
+            <label>Would you recommend us to your friends and colleagues?</label>
+            <input type="radio" id="recommendYes" name="recommendation" value="yes">Yes
+            <input type="radio" id="recommendNo" name="recommendation" value="no">No
+        </div>
+
+        <div class="form-group">
+            <label>How satisfied are you with our company overall?</label>
+            <input type="radio" id="satisfied" name="satisfaction" value="satisfied">Satisfied
+            <input type="radio" id="undecided" name="satisfaction" value="undecided">Undecided
+            <input type="radio" id="unsatisfied" name="satisfaction" value="unsatisfied">Unsatisfied
+        </div>
+
+        <div class="form-group">
+            <label for="suggestion">Do you have suggestions to improve our service?</label>
+            <textarea id="suggestion" name="suggestion" rows="5"></textarea>
+        </div>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <footer>
+        <div class="copyright">
+            &copy; 2018 Customer Survey Form. All Rights Reserved | Design by <p style="color: black;" >W3Layouts</p> 
+        </div>
+    </footer>
+</body>
+</html>
