@@ -1,0 +1,1 @@
+console.log("First JS program on VD code");

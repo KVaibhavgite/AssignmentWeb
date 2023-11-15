@@ -21,4 +21,4 @@ function sortArrayDescending(arr) {
 // Example usage
 let inputArray = [4, 2, 7, 1, 9, 3];
 let sortedArray = sortArrayDescending(inputArray);
-console.log("Sorted Array in Descending Order: " + sortedArray);
+console.log("Sorted Array in Descending Order: " + sortedArray);//Sorted Array in Descending Order: 9,7,4,3,2,1

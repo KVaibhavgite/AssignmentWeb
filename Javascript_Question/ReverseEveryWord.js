@@ -30,4 +30,4 @@ function reverseWords(sentence) {
 // Example usage
 let inputSentence = "This is a sunny day";
 let reversedSentence = reverseWords(inputSentence);
-console.log("Reversed Sentence: " + reversedSentence);
+console.log("Reversed Sentence: " + reversedSentence);//Reversed Sentence: sihT si a ynnus yad

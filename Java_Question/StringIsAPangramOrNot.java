@@ -1,40 +1,40 @@
-*//Java program to check if the input string is a pangram or not:
+//Java program to check if the input string is a pangram or not:
 
-import java.util.HashSet;
 import java.util.Scanner;
-import java.util.Set;
 
-class StringIsAPangramOrNot {
+public class StringIsAPangramOrNot {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Enter a sentence: ");
-        String input = scanner.nextLine().toLowerCase();
 
-        boolean isPangram = checkPangram(input);
-        if (isPangram) {
-            System.out.println("The input is a pangram.");
-        } else {
-            System.out.println("The input is not a pangram.");
-        }
+        System.out.println("Enter a string to check if it is a pangram:");
+        String input = scanner.nextLine();
+
+        // Function calling
+        containAllLetters(input);
+
+        scanner.close();
     }
 
-    // Function to check if the input is a pangram
-    private static boolean checkPangram(String input) {
-        Set<Character> alphabetSet = new HashSet<>();
+    // Function to check if a string contains all the letters (a to z)
+    public static void containAllLetters(String string) {
+        // Converts the given string to lowercase
+        string = string.toLowerCase();
+        boolean allLetterPresent = true;
 
-        // Add all lowercase letters to the set
+        // Loop iterates over each character from 'a' to 'z'
         for (char ch = 'a'; ch <= 'z'; ch++) {
-            alphabetSet.add(ch);
-        }
-
-        // Iterate through the input and remove letters from the set
-        for (char ch : input.toCharArray()) {
-            if (Character.isLetter(ch)) {
-                alphabetSet.remove(ch);
+            // Checks if the string does not contain the current letter
+            if (string.indexOf(ch) == -1) {
+                allLetterPresent = false;
+                break;
             }
         }
 
-        // If the set is empty, it's a pangram
-        return alphabetSet.isEmpty();
+        // Checks if all the letters are presented or not
+        if (allLetterPresent)
+            System.out.println("Pangram String");
+        else
+            System.out.println("Not a Pangram String");
     }
 }
+

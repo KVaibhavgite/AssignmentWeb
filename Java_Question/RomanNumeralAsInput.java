@@ -1,9 +1,9 @@
-*//B. Enter a Roman Number as input and convert it to an integer. (ex IX = 9) 
+//B. Enter a Roman Number as input and convert it to an integer. (ex IX = 9) 
 
 import java.util.HashMap;
 import java.util.Scanner;
 
-class RomanNumberalAsInput  {
+class RomanNumeralAsInput  {
     public static void main(String[] args) {
         // Define the Roman numeral symbols and their corresponding values
         HashMap<Character, Integer> romanMap = new HashMap<>();
